@@ -1,3 +1,5 @@
+local Window = OrionLib:MakeWindow({Name = "Senpai's FE Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
+
 OrionLib:MakeNotification({
 	Name = "Welcome!",
 	Content = "Welcome to Senpai's FE Hub using OrionLIB",
