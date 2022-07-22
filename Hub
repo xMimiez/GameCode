@@ -15,11 +15,11 @@ _G.Keyinput = "string"
 function MakeScriptHub()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Senpai's FE Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
+local Window = OrionLib:MakeWindow({Name = "Suu's Crazy Stuff", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
 
 OrionLib:MakeNotification({
 	Name = "Welcome!",
-	Content = "Welcome to Senpai's FE Hub using OrionLIB",
+	Content = "Welcome to Suu's Crazy Stuff using OrionLIB",
 	Image = "",
 	Time = 5
 })
@@ -30,7 +30,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Home","Welcome to Senpai's FE hub.                                                               Make yourself at home :)                                                                            I am not liable if you get banned or reported                                                                  Use at your own risk")
+Tab:AddParagraph("Home","Welcome to Suu's Crazy Stuff.                                                               Make yourself at home :)                                                                            I am not liable if you get banned or reported                                                                  Use at your own risk")
 
 local Tab = Window:MakeTab({
 	Name = "Gui/Hubs",
@@ -38,7 +38,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Important!","Some hubs are outdated that's why they're free.                                  Use Synapse X to increase your experience of hubs.                                   Check Their discord servers to get all the required hats")
+Tab:AddParagraph("Important!","Some hubs are not updated that's why they're free.                                  Use Synapse X to increase your Chances of executing of hubs.                                   Check Their discord servers to get all the required hats")
 
 Tab:AddButton({
 	Name = "LX63 Hub",
@@ -238,6 +238,28 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Credits","Creator/Owner: Daddy Senpai#2229                                                   Script Testers: Daddy Senpai#2229 | Rinz#7904                                  UI Library: Orion Library")
+
+Tab:AddButton({
+	Name = "Copy Discord Invite Link",
+	Callback = function()
+		setclipboard("")
+toclipboard("")
+      		print("Discord link copied")
+			  OrionLib:MakeNotification({
+				Name = "Discord Link Copied",
+				Content = "",
+				Image = "rbxassetid://4483345998",
+				Time = 5
+			})
+  	end    
+})
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -297,8 +319,51 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "Get Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Copy Discord Invite Link",
+	Callback = function()
+		setclipboard("")
+toclipboard("")
+      		print("Discord link copied")
+  	end    
+})
+
 for i,v in pairs(game.Players:GetPlayers()) do
-    if v.UserId == 77832099, 2463609744 then
+    if v.UserId == 77832099 then
+		wait(1)
+		OrionLib:MakeNotification({
+			Name = "trusted User",
+			Content = "No need for a key for you :)",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		wait(1)
+		MakeScriptHub()
+    end
+ end
+
+ for i,v in pairs(game.Players:GetPlayers()) do
+    if v.UserId == 2463609744 then
+		wait(1)
+		OrionLib:MakeNotification({
+			Name = "trusted User",
+			Content = "No need for a key for you :)",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		wait(1)
+		MakeScriptHub()
+    end
+ end
+
+ for i,v in pairs(game.Players:GetPlayers()) do
+    if v.UserId == 133581867 then
 		wait(1)
 		OrionLib:MakeNotification({
 			Name = "trusted User",
