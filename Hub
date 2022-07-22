@@ -1,0 +1,230 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Senpai's FE Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
+
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Welcome to Senpai's FE Hub using OrionLIB",
+	Image = "",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://4370345144",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Home","Welcome to Senpai's FE hub.                                                               Make yourself at home :)                                                                            I am not liable if you get banned or reported                                                                  Use at your own risk")
+
+local Tab = Window:MakeTab({
+	Name = "Gui/Hubs",
+	Icon = "rbxassetid://1744997183",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Important!","Some hubs are outdated that's why they're free.                                  Use Synapse X to increase your experience of hubs.                                   Check Their discord servers to get all the required hats")
+
+Tab:AddButton({
+	Name = "LX63 Hub",
+	Callback = function()
+		OrionLib:MakeNotification({
+			Name = "Required Hats",
+			Content = "Copied to clipboard   https://discord.gg/ZNmRM6XS7R",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Gogogamer61/LXHub-Main/main/LXHub%20Main%20Script'),true))()
+		setclipboard("https://discord.com/invite/SZWDr6YyZ4")
+toclipboard("https://discord.com/invite/SZWDr6YyZ4")
+
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "HatHubV1",
+	Callback = function()
+		OrionLib:MakeNotification({
+			Name = "Required hats",
+			Content = "Copied to clipboard   https://pastebin.com/raw/EzrGr8w2",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		loadstring(game:HttpGet("https://pastebin.com/raw/1Cjz1RMH"))()
+		setclipboard("https://pastebin.com/raw/EzrGr8w2")
+toclipboard("https://pastebin.com/raw/EzrGr8w2")
+
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "R6 Animation Gui",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/psaJbh62"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Energize Gui",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/EBVdVTjF'))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "shed's Bypasser V3",
+	Callback = function()
+		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+      		print("button pressed")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "FE Actions",
+	Icon = "rbxassetid://1744997183",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Important!","Use Synapse X to increase your experience.                                  Some scripts do not work on ScriptWare and other executors.                                   Use the correct animation to work properly!")
+
+Tab:AddButton({
+	Name = "Flips R6 Only",
+	Callback = function()
+		OrionLib:MakeNotification({
+			Name = "Script Ran",
+			Content = "Please wait a bit till you get the next notifcation",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		loadstring(game:HttpGet('https://pastebin.com/raw/PhZemAiz'))()
+      		print("Flips Activated")
+			  OrionLib:MakeNotification({
+				Name = "Script Ran",
+				Content = "Script successfully Ran",
+				Image = "rbxassetid://4483345998",
+				Time = 5
+			})
+			
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Da Feets R6 Only",
+	Callback = function()
+		OrionLib:MakeNotification({
+			Name = "Script Ran",
+			Content = "Script Running Please Wait",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		
+		loadstring(game:HttpGet('https://pastebin.com/raw/Gs404z0z'))()
+      		print("button pressed")
+			  OrionLib:MakeNotification({
+				Name = "Script Ran",
+				Content = "Script successfully Ran",
+				Image = "rbxassetid://4483345998",
+				Time = 5
+			})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Zombie (R6 Only)",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Local",
+	Icon = "rbxassetid://1744997183",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Local"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+Tab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+		print(Value)
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Anti-AFK"
+})
+
+Tab:AddButton({
+	Name = "Anti-AFK",
+	Callback = function()
+		local vu = game:GetService("VirtualUser")
+              game:GetService("Players").LocalPlayer.Idled:connect(function()
+                 vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+                 wait(1)
+                 vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+              end)
+      		print("Afk Kick Disabled")
+              
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Infinite Yield"
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      		print("Script Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://4431163567",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Settings"
+})
+
+Tab:AddButton({
+	Name = "Kill GUI",
+	Callback = function()
+        game:GetService("CoreGui").Orion:Destroy()
+      		print("Gui KILLED")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
