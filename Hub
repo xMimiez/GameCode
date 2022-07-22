@@ -265,7 +265,7 @@ function InCorrectKeyNotification()
 		Time = 5
 	})
 
-	--game.Players.LocalPlayer:Kick("            Wrong Key                         Try Again")
+	game.Players.LocalPlayer:Kick("            Wrong Key                         Try Again")
 
 
 end
@@ -296,3 +296,17 @@ Tab:AddButton({
 			end
   	end    
 })
+
+for i,v in pairs(game.Players:GetPlayers()) do
+    if v.UserId == 77832099, 2463609744 then
+		wait(1)
+		OrionLib:MakeNotification({
+			Name = "trusted User",
+			Content = "No need for a key for you :)",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+		wait(1)
+		MakeScriptHub()
+    end
+ end
