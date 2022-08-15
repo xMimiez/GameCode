@@ -4,18 +4,19 @@ local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, Sa
 
 OrionLib:MakeNotification({
 	Name = "Key Check",
-	Content = "Enter the key",
+	Content = "Enter the Correct key",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
-_G.Key = "Rin"
+_G.Key = "SUU_dsahjfbalsdhyualghfsu"
 _G.Keyinput = "string"
+
 
 function MakeScriptHub()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Suu's Crazy Stuff", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
+local Window = OrionLib:MakeWindow({Name = "Suu's Crazy Stuff", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
 
 OrionLib:MakeNotification({
 	Name = "Welcome!",
@@ -33,12 +34,29 @@ local Tab = Window:MakeTab({
 Tab:AddParagraph("Home","Welcome to Suu's Crazy Stuff.                                                               Make yourself at home :)                                                                            I am not liable if you get banned or reported                                                                  Use at your own risk")
 
 local Tab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Important!","Executing any of these Games will Remove this gui window.                                  Use Synapse X to increase your Chances of executing.")
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
 	Name = "Gui/Hubs",
 	Icon = "rbxassetid://1744997183",
 	PremiumOnly = false
 })
 
 Tab:AddParagraph("Important!","Some hubs are not updated that's why they're free.                                  Use Synapse X to increase your Chances of executing of hubs.                                   Check Their discord servers to get all the required hats")
+
 
 Tab:AddButton({
 	Name = "LX63 Hub",
@@ -326,16 +344,16 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "Copy Discord Invite Link",
+	Name = "Copy Link",
 	Callback = function()
-		setclipboard("")
-toclipboard("")
+		setclipboard("https://link-target.net/474253/suus-key")
+toclipboard("https://link-target.net/474253/suus-key")
       		print("Discord link copied")
   	end    
 })
 
 for i,v in pairs(game.Players:GetPlayers()) do
-    if v.UserId == 77832099 then
+    if v.UserId == 772832099 then
 		wait(1)
 		OrionLib:MakeNotification({
 			Name = "trusted User",
