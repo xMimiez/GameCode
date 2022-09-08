@@ -16,7 +16,7 @@ _G.Keyinput = "string"
 function MakeScriptHub()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Suu's Crazy Stuff", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
+local Window = OrionLib:MakeWindow({Name = "Suu's Crazy Stuff", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Senpai's FE Hub", IntroIcon = "rbxassetid://4370298658" })
 
 OrionLib:MakeNotification({
 	Name = "Welcome!",
@@ -42,9 +42,9 @@ local Tab = Window:MakeTab({
 Tab:AddParagraph("Important!","Executing any of these Games will Remove this gui window.                                  Use Synapse X to increase your Chances of executing.")
 
 Tab:AddButton({
-	Name = "Button!",
+	Name = "Doors-GUI",
 	Callback = function()
-      		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DaddySenpaiii/GameCode/main/Doors-Main", true))()
   	end    
 })
 
@@ -353,7 +353,7 @@ toclipboard("https://link-target.net/474253/suus-key")
 })
 
 for i,v in pairs(game.Players:GetPlayers()) do
-    if v.UserId == 772832099 then
+    if v.UserId == 77832099 then
 		wait(1)
 		OrionLib:MakeNotification({
 			Name = "trusted User",
